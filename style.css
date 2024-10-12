@@ -114,12 +114,13 @@
     .menu-links {
         position: absolute;
         top: 100%;
-        right: 0;
+        right: 1rem;
         background-color: white;
         width: fit-content;
         max-height: 0;
         overflow: hidden;
         transition: all 0.3 ease-in-out;
+        z-index: 10;
     }
 
     .menu-links a {

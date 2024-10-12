@@ -25,6 +25,7 @@
         display:flex;
         margin:0;
     }
+    
     #experience, .experience-details-container{
         margin-top: 2rem;
     }
@@ -55,6 +56,9 @@
 
 }
 @media screen and (max-width:600px) {
+    .nav-links{
+        display:none;
+    }
     #contact,footer{
         height:40vh;
     }
