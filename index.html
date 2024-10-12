@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+</head>
+
+<body>
+
+    <!--nav bar-->
+    <nav id="desktop-nav">
+        <div class="logo">Ajay Nayak G</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about1">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Ajay Nayak G</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about1" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--PROFILE-->
+    <section id="profile">
+        <div class="section__pic-container">
+            <a href="https://www.linkedin.com/in/ajay-nayak-g-28b283257/" target="_blank" rel="noopener noreferrer">
+                <img src="assets/myphoto.jpeg" alt="Ajay Nayak profile picture" class="about-pic1">
+            </a>
+        </div>  
+        <div class="section__text">
+            <div class="text">
+                <p class="section__text__p3">
+                    Hello I'm
+                </p>
+                <h1 class="title_1">
+                    <span id="dynamic-text"></span>
+                </h1>
+            </div>
+            <div class="butt">
+                <div class="click">
+                    <p class="arr">&#8592;</p>
+                    <p class="txt">Click my face to view my LinkedIn profile!</p>
+                </div>
+
+                <div class="btn-container1"> 
+
+                    <!--put your resume here -->
+
+                    <button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">
+                        My Resume
+                    </button>
+                </div>
+
+                <!-- <div id="social-container1">
+                    <img src="./assets/linkedin.webp" alt="linkedin profile" class="icon1"
+                        onclick="location.href='https://www.linkedin.com/in/ajay-nayak-g-28b283257/'" />
+                </div> -->
+            </div>
+        </div>
+        <img src="./assets/downArrow.png" alt="arrow icon" class="arrow" onclick="location.href='#about1'" />
+    </section>
+
+    <!--ABOUT-->
+
+    <section id="about1">
+        <p class="section__text__p1">
+            Get To Know More
+        </p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container1">
+            <div class="text-container1">
+                <p>I love building things and finding <b>creative, unconventional solutions</b> that work efficiently.
+                    My
+                    passion lies in the logic of problem-solving and understanding both technical and conceptual
+                    challenges. While I enjoy the problem-solving process more than coding, I’m actively enhancing my
+                    coding skills for effective implementation. With a <i><b>“Why not?”</b></i> mindset, I tackle
+                    challenges in my
+                    passion projects, stock market exploration, and unique problems. I believe that skills can be
+                    taught, but <i><b>attitude and values like honesty and trust</b></i> are key to success. I’m
+                    dedicated to
+                    continuous learning and growth, with a strong interest in entrepreneurship.</p>
+            </div>
+            <div class="section__pic-container1">
+                <img src="./assets/myphoto1.jpeg" alt="profile picture" class="about-pic1" />
+            </div>
+
+        </div>
+
+        <img src="./assets/downArrow.png" alt="arrow icon" class="arrow" onclick="location.href='#experience'" />
+    </section>
+    <!--experience-->
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Full Stack Web development</h2>
+                    <h3 class="experience-job-title">Trainee, LearnNex</h3>
+                    <h4 class="tenure">Sep 2024 - Present</h4>
+                    <ul class="about-list">
+                        <li>Currently engaged in an intensive 3-month program covering full-stack web development,
+                            culminating in two capstone projects that will demonstrate practical application of skills
+                            learned.</li>
+                        <li>Certified by IBM, Microsoft, Cisco among other companies</li>
+                    </ul>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Mobile App Development</h2>
+                    <h3 class="experience-job-title">Trainee, MSRIT</h3>
+                    <h4 class="tenure">Intra-Institutional Internship</h4>
+                    <ul class="about-list">
+                        <li>Collaborated on developing a <i><b>Tic-Tac-Toe game</b></i> using Flutter and Dart, focusing
+                            on creating an engaging user experience through innovative design and gameplay mechanics.
+                        </li>
+                        <li>Emphasized logical thinking to optimize game functionality and applied creative
+                            problem-solving to address unique design challenges.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/downArrow.png" alt="arrow icon" class="arrow" onclick="location.href='#skills'" />
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">My</p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Technical</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="/assets/checkmark.jpeg" alt="checkmark" class="icon" />
+                            <div>
+                                <h3>Languages</h3>
+                                <p>Java, Python, C</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/assets/checkmark.jpeg" alt="checkmark" class="icon" />
+                            <div>
+                                <h3>Web Technologies</h3>
+                                <p>HTML, CSS, JavaScript, jQuery</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/assets/checkmark.jpeg" alt="checkmark" class="icon" />
+                            <div>
+                                <h3>Frameworks</h3>
+                                <p>Flutter, React, PHP</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/assets/checkmark.jpeg" alt="checkmark" class="icon" />
+                            <div>
+                                <h3>DBMS</h3>
+                                <p>SQL, MySQL</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/assets/checkmark.jpeg" alt="checkmark" class="icon" />
+                            <div>
+                                <h3>Tools</h3>
+                                <p>GitHub, VS Code</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="/assets/checkmark.jpeg" alt="checkmark" class="icon" />
+                            <div>
+                                <h3>DSA</h3>
+                                <p>Data Structures & Algos</p>
+                            </div>
+                        </article>
+                    </div>
+
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">The Human Side</h2>
+                    <div class="human">
+                        <ul class="list">
+                            <li>
+                                <p><b>Calm Under Pressure - </b>Cool-headed, even when the heat’s on. Pressure? What
+                                    pressure?</p>
+                            </li>
+                            <li>
+                                <p><b>Brutally Honest - </b>Speak my mind, no filters—sometimes not the best, but hey,
+                                    it’s who I am.</p>
+                            </li>
+                            <li>
+                                <p><b>Decision Making and Risk Taking - </b>I trust my gut and make moves, even when
+                                    it’s risky.</p>
+                            </li>
+                            <li>
+                                <p><b>Love Solving Problems - </b>Whether it’s a giant puzzle or an insignificant
+                                    hiccup, I’m always up for cracking it.</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <img src="./assets/downArrow.png" alt="arrow icon" class="arrow" onclick="location.href='#projects'" />
+    </section>
+
+
+    <!--projects-->
+    <section id="projects">
+        <p class="section__text__p1">Browse my recent</p>
+        <h1 class="title">projects</h1>
+        <div class="about-containers1">
+            <div class="details-container details-container1 color-container">
+                <h2 class="project-title">Disaster Management Hackathon</h2>
+                <!-- <ul>
+                    <li>Participated in a hackathon where we focused on ideation, brainstorming, and product development with HTML, CSS, and JavaScript.</li>
+                    <li>Despite not being selected, the experience enriched my skills in critical thinking, customer-centric design, and teamwork.</li>
+                </ul> -->
+                <p class="tenure3">Ideation, Product Development, HTML, CSS, JS</>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://github.com/anayakgit/disaster-management', '_blank')">GitHub</button>
+
+                </div>
+            </div>
+            <div class="details-container details-container1 color-container">
+                <h2 class="project-title">Student Peer Tutoring System</h2>
+                <!-- <ul>
+                    <li>Participated in a hackathon where we focused on ideation, brainstorming, and product development with HTML, CSS, and JavaScript.</li>
+                    <li>Despite not being selected, the experience enriched my skills in critical thinking, customer-centric design, and teamwork.</li>
+                </ul> -->
+                <p class="tenure3">HTML, CSS, JS, basic php & react.js, MySQL</p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="window.open('https://github.com/anayakgit/StudentPeerTutoringSystem', '_blank')">GitHub</button>
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="window.open('./assets/DBMS.mp4', '_blank')">Live Demo</button>
+
+                </div>
+            </div>
+            <div class="details-container details-container1 color-container">
+                <h2 class="project-title">RFID Integrated Bus Ticketing System</h2>
+                <!-- <ul>
+                    <li>Ideation and Report Making</li>
+                    <li>The ideation involved using RFID for user entry/exit detection and digital wallet deductions, with NFC for balance verification.</li>
+                    <li>Created a comprehensive report outlining the system’s functionality and potential impact.</li>
+                </ul> -->
+                <h5 class="tenure2">Ideation, RFID & NFC Fundamentals(Theory)</h5>
+                <!-- <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='www.github.com'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='www.github.com'">Live
+                        Demo</button>
+                </div> -->
+            </div>
+            <div class="details-container details-container1 color-container">
+                <h2 class="project-title">ThriveFit(My Passion Project)</h2>
+                <!-- <ul>
+                    <li>Participated in a hackathon where we focused on ideation, brainstorming, and product development with HTML, CSS, and JavaScript.</li>
+                    <li>Despite not being selected, the experience enriched my skills in critical thinking, customer-centric design, and teamwork.</li>
+                </ul> -->
+                <ul class="list1">
+                    <li class="tenure3">Developing a fitness training business that integrates technology and fitness
+                        coaching to offer personalized workout plans</li>
+                    <li class="tenure3">Applying the web development skills to independently build and design the
+                        website</li>
+                </ul>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn"
+                        onclick="window.open('./assets/Green, White and Black Bold Fitness 169 Video.mp4', '_blank')">Video</button>
+                </div>
+
+
+            </div>
+        </div>
+        <img src="./assets/downArrow.png" alt="arrow icon" class="arrow" onclick="location.href='#contact'" />
+    </section>
+
+    <!--contact-->
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Let's Make It Happen</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="/assets/email.jpg" alt="Email icon" class="icon contact-icon">
+                <p><a href="mailto:anayakg1@gmail.com">My Email</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/linkedin.webp" alt="Linkedin icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/ajay-nayak-g-28b283257/" target="_blank">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about1">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2024 Ajay Nayak G. All Rights Reserved. </p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        const phrases = [
+            "Ajay Nayak",
+            "flaunting my skills",
+            "joking, obviously",
+            "building cool stuff",
+            "solving all kinds of problems",
+            "brutally honest",
+            "making ideas happen"
+        ];
+        let currentPhraseIndex = 0;
+        let currentCharIndex = 0;
+        let isDeleting = false;
+        const typingSpeed = 95;  // Speed of typing
+        const pauseBetweenPhrases = 150;  // Pause between completed phrases
+
+        const dynamicTextElement = document.getElementById('dynamic-text');
+
+        function typeEffect() {
+            const currentPhrase = phrases[currentPhraseIndex];
+
+            if (isDeleting) {
+                // If deleting, reduce the character count
+                dynamicTextElement.innerHTML = currentPhrase.substring(0, currentCharIndex - 1);
+                currentCharIndex--;
+
+                if (currentCharIndex === 0) {
+                    isDeleting = false;  // Stop deleting and start typing the next phrase
+                    currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;  // Cycle through phrases
+                }
+            } else {
+                // If typing, increase the character count
+                dynamicTextElement.innerHTML = currentPhrase.substring(0, currentCharIndex + 1);
+                currentCharIndex++;
+
+                if (currentCharIndex === currentPhrase.length) {
+                    isDeleting = true;  // Start deleting after typing the full phrase
+                    setTimeout(typeEffect, pauseBetweenPhrases);  // Pause before starting to delete
+                    return;
+                }
+            }
+
+            // Set the speed of typing and deleting
+            setTimeout(typeEffect, isDeleting ? typingSpeed / 2 : typingSpeed);  // Deleting is faster
+        }
+
+        // Start the typing effect when the page loads
+        typeEffect();
+    </script>
+
+</body>
+
+</html>
